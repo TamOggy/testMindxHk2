@@ -10,7 +10,6 @@ const TaskItem = ({ task, toggleTask, deleteTask, currentTab }) => {
         onChange={() => toggleTask(task.id)}
       />
       <span>{task.name}</span>
-      {/* Hiện nút xóa chỉ khi tab hiện tại là 'completed' */}
       {currentTab === 'completed' && !task.active && (
         <button onClick={() => deleteTask(task.id)}>🗑️</button>
       )}
