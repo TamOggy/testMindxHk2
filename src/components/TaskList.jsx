@@ -12,7 +12,7 @@ const TaskList = ({ tasks, toggleTask, deleteTask, currentTab }) => {
           task={task}
           toggleTask={toggleTask}
           deleteTask={deleteTask}
-          currentTab={currentTab} // Truyền currentTab vào TaskItem
+          currentTab={currentTab}
         />
       ))}
     </ul>
