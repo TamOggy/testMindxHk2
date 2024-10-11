@@ -32,7 +32,7 @@ const App = () => {
   const filteredTasks = tasks.filter(task => {
     if (tab === 'active') return task.active;
     if (tab === 'completed') return !task.active;
-    return true; // 'all' tab
+    return true; 
   });
 
   return (
